@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-page = 3
+page = 1
 
-while page <= 140:
+while page <= 157:
     url = "http://world.kbs.co.kr/service/program_listenagain.htm?page=" + str(page) + "&lang=e&procode=parkofd&segcode="
     print(url)
     res = requests.get(url)
